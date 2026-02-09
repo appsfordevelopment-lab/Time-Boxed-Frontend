@@ -256,27 +256,35 @@ struct BlockedProfileView: View {
 
         Section("Safeguards") {
           CustomToggle(
+            title: "Strict",
+            description:
+              "Block deleting apps from your phone, stops you from deleting Timeboxed to access apps",
+            isOn: $enableStrictMode,
+            isDisabled: isBlocking
+          )
+
+          CustomToggle(
             title: "Disable Background Stops",
             description:
-              "Disable the ability to stop a profile from the background, this includes shortcuts and scanning links from NFC tags or QR codes.",
+              "Disable the ability to stop a profile from the background, this includes shortcuts and scanning links from NFC tags .",
             isOn: $disableBackgroundStops,
             isDisabled: isBlocking
           )
         }
 
         // Strict Unlocks – design and code commented out
-        // Section("Strict Unlocks") {
-        //   BlockedProfilePhysicalUnblockSelector(
-        //     nfcTagId: physicalUnblockNFCTagId,
-        //     disabled: isBlocking,
-        //     onSetNFC: {
-        //       physicalReader.readNFCTag(
-        //         onSuccess: { physicalUnblockNFCTagId = $0 }
-        //       )
-        //     },
-        //     onUnsetNFC: { physicalUnblockNFCTagId = nil }
-        //   )
-        // }
+         Section("Strict Unlocks") {
+           BlockedProfilePhysicalUnblockSelector(
+             nfcTagId: physicalUnblockNFCTagId,
+             disabled: isBlocking,
+             onSetNFC: {
+               physicalReader.readNFCTag(
+                 onSuccess: { physicalUnblockNFCTagId = $0 }
+               )
+             },
+             onUnsetNFC: { physicalUnblockNFCTagId = nil }
+           )
+         }
 
         Section("Notifications") {
 
