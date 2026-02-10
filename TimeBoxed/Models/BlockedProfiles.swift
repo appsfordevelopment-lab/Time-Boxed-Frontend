@@ -424,6 +424,6 @@ class BlockedProfiles {
     }
 
     let newDomains = domains.filter { $0 != domain }
-    try updateProfile(profile, in: context, domains: newDomains)
+    _ = try updateProfile(profile, in: context, domains: newDomains)
   }
 }

@@ -2,10 +2,8 @@ import AppIntents
 import SwiftData
 
 struct BlockedProfileEntity: AppEntity, Identifiable {
-  let profile: BlockedProfiles
-
-  var id: UUID { profile.id }
-  var name: String { profile.name }
+  let id: UUID
+  let name: String
 
   static var typeDisplayRepresentation = TypeDisplayRepresentation(
     name: "Profile"
@@ -14,7 +12,7 @@ struct BlockedProfileEntity: AppEntity, Identifiable {
   static var defaultQuery = BlockedProfilesQuery()
 
   var displayRepresentation: DisplayRepresentation {
-    DisplayRepresentation(title: "\(profile.name)")
+    DisplayRepresentation(title: "\(name)")
   }
 }
 
@@ -36,7 +34,7 @@ struct BlockedProfilesQuery: EntityQuery {
         predicate: #Predicate { identifiers.contains($0.id) }
       )
     )
-    return results.map { BlockedProfileEntity(profile: $0) }
+    return results.map { BlockedProfileEntity(id: $0.id, name: $0.name) }
   }
 
   @MainActor
@@ -44,7 +42,7 @@ struct BlockedProfilesQuery: EntityQuery {
     let results = try modelContext.fetch(
       FetchDescriptor<BlockedProfiles>(sortBy: [.init(\.name)])
     )
-    return results.map { BlockedProfileEntity(profile: $0) }
+    return results.map { BlockedProfileEntity(id: $0.id, name: $0.name) }
   }
 
   func defaultResult() async -> BlockedProfileEntity? {

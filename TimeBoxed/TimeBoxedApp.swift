@@ -21,6 +21,10 @@ private let container: ModelContainer = {
   }
 }()
 
+enum SharedModelContainer {
+  static var shared: ModelContainer?
+}
+
 @main
 struct TimeBoxedApp: App {
   @StateObject private var requestAuthorizer = RequestAuthorizer()
@@ -35,6 +39,7 @@ struct TimeBoxedApp: App {
   @StateObject private var themeManager = ThemeManager.shared
 
   init() {
+    SharedModelContainer.shared = container
     TimersUtil.registerBackgroundTasks()
 
     let asyncDependency: @Sendable () async -> (ModelContainer) = {

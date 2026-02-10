@@ -27,6 +27,10 @@ class NFCBlockingStrategy: BlockingStrategy {
     profile: BlockedProfiles,
     forceStart: Bool?
   ) -> (any View)? {
+    let profileId = profile.id
+    let profileName = profile.name
+    let forceStartValue = forceStart ?? false
+
     nfcScanner.onTagScanned = { tag in
       let tagId = tag.url ?? tag.id
 
@@ -39,6 +43,11 @@ class NFCBlockingStrategy: BlockingStrategy {
             )
             return
           }
+          guard let context = SharedModelContainer.shared?.mainContext,
+                let profile = try? BlockedProfiles.findProfile(byID: profileId, in: context)
+          else {
+            return
+          }
           self.appBlocker.activateRestrictions(for: BlockedProfiles.getSnapshot(for: profile))
           let activeSession =
             BlockedProfileSession
@@ -46,14 +55,14 @@ class NFCBlockingStrategy: BlockingStrategy {
               in: context,
               withTag: tagId,
               withProfile: profile,
-              forceStart: forceStart ?? false
+              forceStart: forceStartValue
             )
           self.onSessionCreation?(.started(activeSession))
         }
       }
     }
 
-    nfcScanner.scan(profileName: profile.name)
+    nfcScanner.scan(profileName: profileName)
 
     return nil
   }
@@ -62,6 +71,9 @@ class NFCBlockingStrategy: BlockingStrategy {
     context: ModelContext,
     session: BlockedProfileSession
   ) -> (any View)? {
+    let sessionId = session.id
+    let profileName = session.blockedProfile.name
+
     nfcScanner.onTagScanned = { tag in
       let tagId = tag.url ?? tag.id
 
@@ -72,6 +84,11 @@ class NFCBlockingStrategy: BlockingStrategy {
             self.onErrorMessage?(
               "This NFC tag is not registered. Only NFC tags added to your account can lock or unblock."
             )
+            return
+          }
+          guard let context = SharedModelContainer.shared?.mainContext,
+                let session = try? BlockedProfileSession.findSession(byID: sessionId, in: context)
+          else {
             return
           }
           if let physicalUnblockNFCTagId = session.blockedProfile.physicalUnblockNFCTagId {
@@ -87,15 +104,16 @@ class NFCBlockingStrategy: BlockingStrategy {
             )
             return
           }
+          let profile = session.blockedProfile
           session.endSession()
           try? context.save()
           self.appBlocker.deactivateRestrictions()
-          self.onSessionCreation?(.ended(session.blockedProfile))
+          self.onSessionCreation?(.ended(profile))
         }
       }
     }
 
-    nfcScanner.scan(profileName: session.blockedProfile.name)
+    nfcScanner.scan(profileName: profileName)
 
     return nil
   }
