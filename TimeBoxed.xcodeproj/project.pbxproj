@@ -617,7 +617,7 @@
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimeBoxedDeviceMonitor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TimeBoxedDeviceMonitor;
+				INFOPLIST_KEY_CFBundleDisplayName = TymeBoxedDeviceMonitor;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -650,7 +650,7 @@
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimeBoxedDeviceMonitor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TimeBoxedDeviceMonitor;
+				INFOPLIST_KEY_CFBundleDisplayName = TymeBoxedDeviceMonitor;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -808,7 +808,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimeBoxed/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Time Boxed";
+				INFOPLIST_KEY_CFBundleDisplayName = TymeBoxed;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC to scan tags for item identification.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan QR codes to active/deactivate profiles";
@@ -856,7 +856,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimeBoxed/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Time Boxed";
+				INFOPLIST_KEY_CFBundleDisplayName = TymeBoxed;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC to scan tags for item identification.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan QR codes to active/deactivate profiles";
@@ -990,7 +990,7 @@
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimeBoxedShieldConfig/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TimeBoxedShieldConfig;
+				INFOPLIST_KEY_CFBundleDisplayName = TymeBoxedShieldConfig;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1018,7 +1018,7 @@
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimeBoxedShieldConfig/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TimeBoxedShieldConfig;
+				INFOPLIST_KEY_CFBundleDisplayName = TymeBoxedShieldConfig;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1049,7 +1049,7 @@
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimeBoxedWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TimeBoxedWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = TymeBoxedWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1079,7 +1079,7 @@
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimeBoxedWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = TimeBoxedWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = TymeBoxedWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (

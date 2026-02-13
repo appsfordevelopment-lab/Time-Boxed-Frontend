@@ -1,6 +1,6 @@
-# Time Boxed Developer Guidelines
+# TymeBoxed Developer Guidelines
 
-This file provides guidelines for agentic coding assistants working on the Time Boxed iOS app codebase.
+This file provides guidelines for agentic coding assistants working on the TymeBoxed iOS app codebase.
 
 ## Build & Test Commands
 

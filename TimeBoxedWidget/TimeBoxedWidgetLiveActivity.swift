@@ -47,7 +47,7 @@ struct TimeBoxedWidgetLiveActivity: Widget {
         // Left side - App info
         VStack(alignment: .leading, spacing: 8) {
           HStack(spacing: 4) {
-            Text("Time Boxed")
+            Text("TymeBoxed")
               .font(.headline)
               .fontWeight(.bold)
               .foregroundColor(.primary)

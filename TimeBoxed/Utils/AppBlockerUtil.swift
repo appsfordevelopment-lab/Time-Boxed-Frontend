@@ -3,7 +3,7 @@ import SwiftUI
 
 class AppBlockerUtil {
   let store = ManagedSettingsStore(
-    named: ManagedSettingsStore.Name("TimeBoxedAppRestrictions")
+    named: ManagedSettingsStore.Name("TymeBoxedAppRestrictions")
   )
 
   func activateRestrictions(for profile: SharedData.ProfileSnapshot) {

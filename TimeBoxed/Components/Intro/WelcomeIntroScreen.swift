@@ -78,9 +78,9 @@ struct WelcomeIntroScreen: View {
           .opacity(showContent ? 1 : 0)
           .offset(y: showContent ? 0 : 20)
 
-          // I don't have a Time Boxed button
+          // I don't have a TymeBoxed button
           Button(action: onSkipBrick) {
-            Text("I don't have a Time Boxed")
+            Text("I don't have a TymeBoxed")
               .font(.system(size: 20, weight: .semibold))
               .foregroundColor(.white)
               .frame(maxWidth: 350)

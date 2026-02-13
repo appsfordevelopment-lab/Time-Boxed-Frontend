@@ -1,6 +1,6 @@
 //
 //  TimeBoxedApp.swift
-//  Time Boxed
+//  TymeBoxed
 //
 //  Created by Ali Waseem on 2024-10-06.
 //

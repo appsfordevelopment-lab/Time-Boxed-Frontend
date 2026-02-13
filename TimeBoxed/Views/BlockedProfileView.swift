@@ -26,7 +26,7 @@ struct BlockedProfileView: View {
   var profile: BlockedProfiles?
 
   @State private var name: String = ""
-  @State private var enableLiveActivity: Bool = false
+  @State private var enableLiveActivity: Bool = true
   @State private var enableReminder: Bool = false
   @State private var enableBreaks: Bool = false
   @State private var breakTimeInMinutes: Int = 15
@@ -91,7 +91,7 @@ struct BlockedProfileView: View {
       initialValue: profile?.selectedActivity ?? FamilyActivitySelection()
     )
     _enableLiveActivity = State(
-      initialValue: profile?.enableLiveActivity ?? false
+      initialValue: profile?.enableLiveActivity ?? true
     )
     _enableBreaks = State(
       initialValue: profile?.enableBreaks ?? false
@@ -261,18 +261,18 @@ struct BlockedProfileView: View {
         }
 
         // Strict Unlocks – design and code commented out
-         Section("Strict Unlocks") {
-           BlockedProfilePhysicalUnblockSelector(
-             nfcTagId: physicalUnblockNFCTagId,
-             disabled: isBlocking,
-             onSetNFC: {
-               physicalReader.readNFCTag(
-                 onSuccess: { physicalUnblockNFCTagId = $0 }
-               )
-             },
-             onUnsetNFC: { physicalUnblockNFCTagId = nil }
-           )
-         }
+//         Section("Strict Unlocks") {
+//           BlockedProfilePhysicalUnblockSelector(
+//             nfcTagId: physicalUnblockNFCTagId,
+//             disabled: isBlocking,
+//             onSetNFC: {
+//               physicalReader.readNFCTag(
+//                 onSuccess: { physicalUnblockNFCTagId = $0 }
+//               )
+//             },
+//             onUnsetNFC: { physicalUnblockNFCTagId = nil }
+//           )
+//         }
 
         Section("Notifications") {
 

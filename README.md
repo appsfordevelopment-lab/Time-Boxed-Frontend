@@ -1,19 +1,19 @@
 <p align="center">
-  <img src="./TimeBoxed/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png" width="250" style="border-radius: 40px;">
+  <img src="./TimeBoxed/Assets.xcassets/AppIcon.appiconset/AppIcon-3.png" width="250" style="border-radius: 40px;">
 </p>
 
 <p align="center">
 <a href="https://www.buymeacoffee.com/ambitionsoftware" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 </p>
 
-<h1 align="center"><a href="https://apps.apple.com/ca/app/timeboxed/id6736793117">Time Boxed</a></h1>
+<h1 align="center"><a href="https://apps.apple.com/ca/app/timeboxed/id6736793117">TymeBoxed</a></h1>
 
 <p align="center">
   <strong>Focus, the physical way</strong>
 </p>
 
 <p align="center">
-  Time Boxed helps you put your most distracting apps behind a quick tap — using NFC tags or QR codes — so you can stay in the zone and build better digital habits. It’s free, open source, and an alternative to Brick, Bloom, Unpluq, Blok, and more.
+  TymeBoxed helps you put your most distracting apps behind a quick tap — using NFC tags or QR codes — so you can stay in the zone and build better digital habits. It’s free, open source, and an alternative to Brick, Bloom, Unpluq, Blok, and more.
 </p>
 
 ---
@@ -40,7 +40,7 @@
 
 ### From the App Store
 
-1. Download Time Boxed from the [App Store](https://apps.apple.com/ca/app/timeboxed/id6736793117)
+1. Download TymeBoxed from the [App Store](https://apps.apple.com/ca/app/timeboxed/id6736793117)
 2. Grant Screen Time permissions when prompted
 3. Create your first blocking profile
 4. Optionally set up NFC tags or a QR code and start focusing
@@ -48,7 +48,7 @@
 ### Setting Up NFC Tags
 
 1. Grab a few NFC tags (NTAG213 or similar works great)
-2. Create a profile in Time Boxed
+2. Create a profile in TymeBoxed
 3. Write the tag from within the app
 4. Stick tags where they make sense (desk, study spot, bedside)
 5. Tap to start or stop a session

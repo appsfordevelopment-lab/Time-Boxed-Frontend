@@ -39,7 +39,7 @@ struct PermissionsScreen: View {
           ScrollView {
             VStack(alignment: .leading, spacing: 0) {
               // Title
-              Text("Connect Time Boxed to Apple Screen Time")
+              Text("Connect TymeBoxed to Apple Screen Time")
                 .font(.system(size: 34, weight: .bold))
                 .foregroundColor(.primary)
                 .multilineTextAlignment(.leading)
@@ -53,7 +53,7 @@ struct PermissionsScreen: View {
                 permissionSection(
                   icon: "gearshape.fill",
                   title: "How you'll use this",
-                  description: "Granting access lets you choose which apps to block in your modes. Screen Time securely pauses them when you're Time Boxed."
+                  description: "Granting access lets you choose which apps to block in your modes. Screen Time securely pauses them when you're TymeBoxed."
                 )
 
                 // How we'll use this
@@ -89,7 +89,7 @@ struct PermissionsScreen: View {
                 permissionSection(
                   icon: "star.fill",
                   title: "Why it matters",
-                  description: "This is how Time Boxed helps you create focused, intentional time, without deleting apps."
+                  description: "This is how TymeBoxed helps you create focused, intentional time, without deleting apps."
                 )
               }
               .padding(.horizontal, 20)
