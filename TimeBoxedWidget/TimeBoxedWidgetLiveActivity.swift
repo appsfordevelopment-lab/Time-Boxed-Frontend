@@ -2,6 +2,15 @@ import ActivityKit
 import SwiftUI
 import WidgetKit
 
+@ViewBuilder
+private func appLogoView(size: CGFloat = 24) -> some View {
+  Image("AppLogo")
+    .resizable()
+    .renderingMode(.original)
+    .scaledToFit()
+    .frame(width: size, height: size)
+}
+
 struct TimeBoxedWidgetAttributes: ActivityAttributes {
   public struct ContentState: Codable, Hashable {
     var startTime: Date
@@ -47,12 +56,11 @@ struct TimeBoxedWidgetLiveActivity: Widget {
         // Left side - App info
         VStack(alignment: .leading, spacing: 8) {
           HStack(spacing: 4) {
-            Text("TymeBoxed")
+            Text("Tyme Boxed")
               .font(.headline)
               .fontWeight(.bold)
               .foregroundColor(.primary)
-            Image(systemName: "hourglass")
-              .foregroundColor(.purple)
+            appLogoView(size: 24)
           }
 
           Text(context.attributes.name)
@@ -101,8 +109,7 @@ struct TimeBoxedWidgetLiveActivity: Widget {
         DynamicIslandExpandedRegion(.center) {
           VStack(spacing: 8) {
             HStack(spacing: 6) {
-              Image(systemName: "hourglass")
-                .foregroundColor(.purple)
+              appLogoView(size: 24)
               Text(context.attributes.name)
                 .font(.headline)
                 .fontWeight(.medium)
@@ -140,9 +147,7 @@ struct TimeBoxedWidgetLiveActivity: Widget {
           .padding(.vertical, 4)
         }
       } compactLeading: {
-        // Compact leading state
-        Image(systemName: "hourglass")
-          .foregroundColor(.purple)
+        appLogoView(size: 20)
       } compactTrailing: {
         // Compact trailing state
         Text(
@@ -151,9 +156,7 @@ struct TimeBoxedWidgetLiveActivity: Widget {
         .font(.caption)
         .fontWeight(.semibold)
       } minimal: {
-        // Minimal state
-        Image(systemName: "hourglass")
-          .foregroundColor(.purple)
+        appLogoView(size: 16)
       }
       .widgetURL(URL(string: "http://www.timeboxed.app"))
       .keylineTint(Color.purple)

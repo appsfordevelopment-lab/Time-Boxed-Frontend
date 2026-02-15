@@ -36,7 +36,7 @@ struct Welcome: View {
           .foregroundColor(.primary)
 
         Text(
-          "Tap here to get started on your first profile. You can use NFC Tags, QR codes or even Barcode codes."
+          "Tap here to get started on your first profile."
         )
         .font(.subheadline)
         .foregroundColor(.secondary)
