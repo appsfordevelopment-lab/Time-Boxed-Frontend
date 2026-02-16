@@ -43,9 +43,6 @@ struct BlockedProfileView: View {
 
   @State private var schedule: BlockedProfileSchedule
 
-  // QR code generator
-  @State private var showingGeneratedQRCode = false
-
   // Sheet for activity picker
   @State private var showingActivityPicker = false
 
@@ -373,12 +370,6 @@ struct BlockedProfileView: View {
                 }
 
                 Button {
-                  showingGeneratedQRCode = true
-                } label: {
-                  Label("Generate QR code", systemImage: "qrcode")
-                }
-
-                Button {
                   cloneName = validProfile.name + " Copy"
                   showingClonePrompt = true
                 } label: {
@@ -444,16 +435,6 @@ struct BlockedProfileView: View {
           schedule: $schedule,
           isPresented: $showingSchedulePicker
         )
-      }
-      .sheet(isPresented: $showingGeneratedQRCode) {
-        if let profileToWrite = profile {
-          let url = BlockedProfiles.getProfileDeepLink(profileToWrite)
-          QRCodeView(
-            url: url,
-            profileName: profileToWrite
-              .name
-          )
-        }
       }
       .sheet(isPresented: $showingInsights) {
         if let validProfile = profile {

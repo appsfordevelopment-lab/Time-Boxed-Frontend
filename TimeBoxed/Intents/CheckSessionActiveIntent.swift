@@ -10,9 +10,9 @@ struct CheckSessionActiveIntent: AppIntent {
     return modelContainer.mainContext
   }
 
-  static var title: LocalizedStringResource = "Check if TymeBoxed Session is Active"
+  static var title: LocalizedStringResource = "Check if Tyme Boxed Session is Active"
   static var description = IntentDescription(
-    "Check if any TymeBoxed blocking session is currently active and return true or false. Useful for automation and shortcuts."
+    "Check if any Tyme Boxed blocking session is currently active and return true or false. Useful for automation and shortcuts."
   )
 
   static var openAppWhenRun: Bool = false
@@ -29,8 +29,8 @@ struct CheckSessionActiveIntent: AppIntent {
 
     let dialogMessage =
       isActive
-      ? "A TymeBoxed session is currently active."
-      : "No TymeBoxed session is active."
+      ? "A Tyme Boxed session is currently active."
+      : "No Tyme Boxed session is active."
 
     return .result(
       value: isActive,

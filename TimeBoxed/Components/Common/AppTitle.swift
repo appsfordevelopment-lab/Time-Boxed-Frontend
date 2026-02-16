@@ -7,7 +7,7 @@ struct AppTitle: View {
   let horizontalPadding: CGFloat
 
   init(
-    _ title: String = "TymeBoxed",
+    _ title: String = "Tyme Boxed",
     font: Font = .largeTitle,
     fontWeight: Font.Weight = .bold,
     horizontalPadding: CGFloat = 16
@@ -31,7 +31,7 @@ struct AppTitle: View {
   VStack(spacing: 24) {
     AppTitle()
 
-    AppTitle("TymeBoxed", font: .title, fontWeight: .semibold)
+    AppTitle("Tyme Boxed", font: .title, fontWeight: .semibold)
 
     AppTitle("Custom Title", font: .title2, fontWeight: .medium, horizontalPadding: 24)
   }

@@ -29,7 +29,7 @@ struct ProfileControlWidget: Widget {
           }
         }
     }
-    .configurationDisplayName("TymeBoxed Profile")
+    .configurationDisplayName("Tyme Boxed Profile")
     .description("Monitor and control your selected focus profile")
     .supportedFamilies([.systemSmall])
   }

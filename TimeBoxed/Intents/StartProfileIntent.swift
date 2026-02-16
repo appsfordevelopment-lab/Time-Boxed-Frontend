@@ -14,10 +14,10 @@ struct StartProfileIntent: AppIntent {
 
   @Parameter(title: "Duration minutes (Optional)") var durationInMinutes: Int?
 
-  static var title: LocalizedStringResource = "Start TymeBoxed Profile"
+  static var title: LocalizedStringResource = "Start Tyme Boxed Profile"
 
   static var description = IntentDescription(
-    "Start a TymeBoxed blocking profile. Optionally specify a timer duration in minutes (15-1440)."
+    "Start a Tyme Boxed blocking profile. Optionally specify a timer duration in minutes (15-1440)."
   )
 
   @MainActor

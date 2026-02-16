@@ -39,7 +39,7 @@ class NFCBlockingStrategy: BlockingStrategy {
         await MainActor.run {
           guard valid else {
             self.onErrorMessage?(
-              "This NFC tag is not registered. Only NFC tags added to your account can lock or unblock."
+              "Unregistered device detected. Please switch to a Tyme Box Device."
             )
             return
           }
@@ -82,7 +82,7 @@ class NFCBlockingStrategy: BlockingStrategy {
         await MainActor.run {
           guard valid else {
             self.onErrorMessage?(
-              "This NFC tag is not registered. Only NFC tags added to your account can lock or unblock."
+              "Unregistered device detected. Please switch to a Tyme Box Device."
             )
             return
           }

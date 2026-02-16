@@ -78,9 +78,9 @@ struct WelcomeIntroScreen: View {
           .opacity(showContent ? 1 : 0)
           .offset(y: showContent ? 0 : 20)
 
-          // I don't have a TymeBoxed button
+          // I don't have a Tyme Boxed button
           Button(action: onSkipBrick) {
-            Text("I don't have a TymeBoxed")
+            Text("I don't have a Tyme Boxed")
               .font(.system(size: 20, weight: .semibold))
               .foregroundColor(.white)
               .frame(maxWidth: 350)

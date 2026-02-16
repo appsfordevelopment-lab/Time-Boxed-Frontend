@@ -12,9 +12,9 @@ struct CheckProfileStatusIntent: AppIntent {
 
   @Parameter(title: "Profile") var profile: BlockedProfileEntity
 
-  static var title: LocalizedStringResource = "TymeBoxed Profile Status"
+  static var title: LocalizedStringResource = "Tyme Boxed Profile Status"
   static var description = IntentDescription(
-    "Check if a TymeBoxed profile is currently active and return the status as a boolean value.")
+    "Check if a Tyme Boxed profile is currently active and return the status as a boolean value.")
 
   @MainActor
   func perform() async throws -> some IntentResult & ReturnsValue<Bool> & ProvidesDialog {

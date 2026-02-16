@@ -30,7 +30,7 @@ struct Welcome: View {
           .frame(height: 10)
 
         // Title and subtitle
-        Text("Welcome to TymeBoxed")
+        Text("Welcome to Tyme Boxed")
           .font(.title)
           .fontWeight(.bold)
           .foregroundColor(.primary)
