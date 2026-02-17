@@ -67,7 +67,7 @@
 ```bash
 git clone https://github.com/awaseem/timeboxed.git
 cd timeboxed
-open TimeBoxed.xcodeproj
+open TymeBoxed.xcodeproj
 ```
 
 ### Project Structure

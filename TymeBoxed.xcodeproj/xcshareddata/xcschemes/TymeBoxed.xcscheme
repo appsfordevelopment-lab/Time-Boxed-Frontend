@@ -18,7 +18,7 @@
                BlueprintIdentifier = "801B20942CB363A10073E9E2"
                BuildableName = "TymeBoxed.app"
                BlueprintName = "TymeBoxed"
-               ReferencedContainer = "container:TimeBoxed.xcodeproj">
+               ReferencedContainer = "container:TymeBoxed.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -38,7 +38,7 @@
                BlueprintIdentifier = "801B20A52CB363A20073E9E2"
                BuildableName = "TymeBoxedTests.xctest"
                BlueprintName = "TymeBoxedTests"
-               ReferencedContainer = "container:TimeBoxed.xcodeproj">
+               ReferencedContainer = "container:TymeBoxed.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "801B20AF2CB363A20073E9E2"
                BuildableName = "TymeBoxedUITests.xctest"
                BlueprintName = "TymeBoxedUITests"
-               ReferencedContainer = "container:TimeBoxed.xcodeproj">
+               ReferencedContainer = "container:TymeBoxed.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,7 +71,7 @@
             BlueprintIdentifier = "801B20942CB363A10073E9E2"
             BuildableName = "TymeBoxed.app"
             BlueprintName = "TymeBoxed"
-            ReferencedContainer = "container:TimeBoxed.xcodeproj">
+            ReferencedContainer = "container:TymeBoxed.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
@@ -91,7 +91,7 @@
             BlueprintIdentifier = "801B20942CB363A10073E9E2"
             BuildableName = "TymeBoxed.app"
             BlueprintName = "TymeBoxed"
-            ReferencedContainer = "container:TimeBoxed.xcodeproj">
+            ReferencedContainer = "container:TymeBoxed.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

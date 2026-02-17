@@ -12,8 +12,8 @@
 	"argv": [
 		"/opt/homebrew/bin/xcode-build-server"
 	],
-	"workspace": "/Users/aniruddh/Desktop/Time Boxed/foqos/TimeBoxed.xcodeproj/project.xcworkspace",
-	"build_root": "/Users/aniruddh/Library/Developer/Xcode/DerivedData/TimeBoxed",
-	"scheme": "TimeBoxed",
+	"workspace": "/Users/aniruddh/Desktop/Tyme Boxed/foqos/TymeBoxed.xcodeproj/project.xcworkspace",
+	"build_root": "/Users/aniruddh/Library/Developer/Xcode/DerivedData/TymeBoxed",
+	"scheme": "TymeBoxed",
 	"kind": "xcode"
 }

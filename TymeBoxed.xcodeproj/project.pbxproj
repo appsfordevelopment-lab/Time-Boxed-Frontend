@@ -462,7 +462,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 801B20902CB363A10073E9E2 /* Build configuration list for PBXProject "TimeBoxed" */;
+			buildConfigurationList = 801B20902CB363A10073E9E2 /* Build configuration list for PBXProject "TymeBoxed" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -626,7 +626,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.78.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TimeBoxedDeviceMonitor;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TymeBoxedDeviceMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -659,7 +659,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.78.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TimeBoxedDeviceMonitor;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TymeBoxedDeviceMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -899,7 +899,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.TimeBoxedTests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.TymeBoxedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -923,7 +923,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.TimeBoxedTests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.TymeBoxedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -946,7 +946,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.TimeBoxedUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.TymeBoxedUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -969,7 +969,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.TimeBoxedUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.TymeBoxedUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -999,7 +999,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.78.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TimeBoxedShieldConfig;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TymeBoxedShieldConfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1027,7 +1027,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.78.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TimeBoxedShieldConfig;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TymeBoxedShieldConfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1058,7 +1058,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.78.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TimeBoxedWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TymeBoxedWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1088,7 +1088,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.78.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TimeBoxedWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ambitionsoftware.timeboxed.TymeBoxedWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1111,7 +1111,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		801B20902CB363A10073E9E2 /* Build configuration list for PBXProject "TimeBoxed" */ = {
+		801B20902CB363A10073E9E2 /* Build configuration list for PBXProject "TymeBoxed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				801B20B82CB363A20073E9E2 /* Debug */,
