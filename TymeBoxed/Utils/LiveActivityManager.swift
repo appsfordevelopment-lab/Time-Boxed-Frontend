@@ -4,7 +4,7 @@ import SwiftUI
 
 class LiveActivityManager: ObservableObject {
   // Published property for live activity reference
-  @Published var currentActivity: Activity<TimeBoxedWidgetAttributes>?
+  @Published var currentActivity: Activity<TymeBoxedWidgetAttributes>?
 
   // Use AppStorage for persisting the activity ID across app launches
   @AppStorage("com.timeboxed.currentActivityId") private var storedActivityId: String = ""
@@ -39,7 +39,7 @@ class LiveActivityManager: ObservableObject {
 
     // Check if we have a saved activity ID
     if !storedActivityId.isEmpty {
-      if let existingActivity = Activity<TimeBoxedWidgetAttributes>.activities.first(where: {
+      if let existingActivity = Activity<TymeBoxedWidgetAttributes>.activities.first(where: {
         $0.id == storedActivityId
       }) {
         // Found the existing activity
@@ -80,8 +80,8 @@ class LiveActivityManager: ObservableObject {
     // Create and start the activity
     let profileName = session.blockedProfile.name
     let message = FocusMessages.getRandomMessage()
-    let attributes = TimeBoxedWidgetAttributes(name: profileName, message: message)
-    let contentState = TimeBoxedWidgetAttributes.ContentState(
+    let attributes = TymeBoxedWidgetAttributes(name: profileName, message: message)
+    let contentState = TymeBoxedWidgetAttributes.ContentState(
       startTime: session.startTime,
       isBreakActive: session.isBreakActive,
       breakStartTime: session.breakStartTime,
@@ -111,7 +111,7 @@ class LiveActivityManager: ObservableObject {
       return
     }
 
-    let updatedState = TimeBoxedWidgetAttributes.ContentState(
+    let updatedState = TymeBoxedWidgetAttributes.ContentState(
       startTime: session.startTime,
       isBreakActive: session.isBreakActive,
       breakStartTime: session.breakStartTime,
@@ -131,7 +131,7 @@ class LiveActivityManager: ObservableObject {
       return
     }
 
-    let updatedState = TimeBoxedWidgetAttributes.ContentState(
+    let updatedState = TymeBoxedWidgetAttributes.ContentState(
       startTime: session.startTime,
       isBreakActive: session.isBreakActive,
       breakStartTime: session.breakStartTime,
@@ -152,7 +152,7 @@ class LiveActivityManager: ObservableObject {
     }
 
     // End the activity
-    let completedState = TimeBoxedWidgetAttributes.ContentState(
+    let completedState = TymeBoxedWidgetAttributes.ContentState(
       startTime: Date.now
     )
     let content = ActivityContent(state: completedState, staleDate: nil)

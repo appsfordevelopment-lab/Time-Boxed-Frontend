@@ -11,7 +11,7 @@ private func appLogoView(size: CGFloat = 24) -> some View {
     .frame(width: size, height: size)
 }
 
-struct TimeBoxedWidgetAttributes: ActivityAttributes {
+struct TymeBoxedWidgetAttributes: ActivityAttributes {
   public struct ContentState: Codable, Hashable {
     var startTime: Date
     var isBreakActive: Bool = false
@@ -48,9 +48,9 @@ struct TimeBoxedWidgetAttributes: ActivityAttributes {
   var message: String
 }
 
-struct TimeBoxedWidgetLiveActivity: Widget {
+struct TymeBoxedWidgetLiveActivity: Widget {
   var body: some WidgetConfiguration {
-    ActivityConfiguration(for: TimeBoxedWidgetAttributes.self) { context in
+    ActivityConfiguration(for: TymeBoxedWidgetAttributes.self) { context in
       // Lock screen/banner UI goes here
       HStack(alignment: .center, spacing: 16) {
         // Left side - App info
@@ -164,17 +164,17 @@ struct TimeBoxedWidgetLiveActivity: Widget {
   }
 }
 
-extension TimeBoxedWidgetAttributes {
-  fileprivate static var preview: TimeBoxedWidgetAttributes {
-    TimeBoxedWidgetAttributes(
+extension TymeBoxedWidgetAttributes {
+  fileprivate static var preview: TymeBoxedWidgetAttributes {
+    TymeBoxedWidgetAttributes(
       name: "Focus Session",
       message: "Stay focused and avoid distractions")
   }
 }
 
-extension TimeBoxedWidgetAttributes.ContentState {
-  fileprivate static var shortTime: TimeBoxedWidgetAttributes.ContentState {
-    TimeBoxedWidgetAttributes
+extension TymeBoxedWidgetAttributes.ContentState {
+  fileprivate static var shortTime: TymeBoxedWidgetAttributes.ContentState {
+    TymeBoxedWidgetAttributes
       .ContentState(
         startTime: Date(timeInterval: 60, since: Date.now),
         isBreakActive: false,
@@ -183,8 +183,8 @@ extension TimeBoxedWidgetAttributes.ContentState {
       )
   }
 
-  fileprivate static var longTime: TimeBoxedWidgetAttributes.ContentState {
-    TimeBoxedWidgetAttributes.ContentState(
+  fileprivate static var longTime: TymeBoxedWidgetAttributes.ContentState {
+    TymeBoxedWidgetAttributes.ContentState(
       startTime: Date(timeInterval: 60, since: Date.now),
       isBreakActive: false,
       breakStartTime: nil,
@@ -192,8 +192,8 @@ extension TimeBoxedWidgetAttributes.ContentState {
     )
   }
 
-  fileprivate static var breakActive: TimeBoxedWidgetAttributes.ContentState {
-    TimeBoxedWidgetAttributes.ContentState(
+  fileprivate static var breakActive: TymeBoxedWidgetAttributes.ContentState {
+    TymeBoxedWidgetAttributes.ContentState(
       startTime: Date(timeInterval: 60, since: Date.now),
       isBreakActive: true,
       breakStartTime: Date.now,
@@ -202,10 +202,10 @@ extension TimeBoxedWidgetAttributes.ContentState {
   }
 }
 
-#Preview("Notification", as: .content, using: TimeBoxedWidgetAttributes.preview) {
-  TimeBoxedWidgetLiveActivity()
+#Preview("Notification", as: .content, using: TymeBoxedWidgetAttributes.preview) {
+  TymeBoxedWidgetLiveActivity()
 } contentStates: {
-  TimeBoxedWidgetAttributes.ContentState.shortTime
-  TimeBoxedWidgetAttributes.ContentState.longTime
-  TimeBoxedWidgetAttributes.ContentState.breakActive
+  TymeBoxedWidgetAttributes.ContentState.shortTime
+  TymeBoxedWidgetAttributes.ContentState.longTime
+  TymeBoxedWidgetAttributes.ContentState.breakActive
 }

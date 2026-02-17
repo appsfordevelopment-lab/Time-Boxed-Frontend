@@ -1,6 +1,6 @@
 //
 //  ProfileWidgetEntryView.swift
-//  TimeBoxedWidget
+//  Tyme Boxed
 //
 //  Created by Ali Waseem on 2025-03-11.
 //

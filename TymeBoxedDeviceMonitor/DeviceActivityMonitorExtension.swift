@@ -1,6 +1,6 @@
 //
 //  DeviceActivityMonitorExtension.swift
-//  TimeBoxedDeviceMonitor
+//  Tyme Boxed
 //
 //  Created by Ali Waseem on 2025-05-27.
 //

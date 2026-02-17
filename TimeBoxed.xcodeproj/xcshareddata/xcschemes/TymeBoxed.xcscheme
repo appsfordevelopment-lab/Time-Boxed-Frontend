@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "801B20942CB363A10073E9E2"
-               BuildableName = "TimeBoxed.app"
-               BlueprintName = "TimeBoxed"
+               BuildableName = "TymeBoxed.app"
+               BlueprintName = "TymeBoxed"
                ReferencedContainer = "container:TimeBoxed.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -36,8 +36,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "801B20A52CB363A20073E9E2"
-               BuildableName = "TimeBoxedTests.xctest"
-               BlueprintName = "TimeBoxedTests"
+               BuildableName = "TymeBoxedTests.xctest"
+               BlueprintName = "TymeBoxedTests"
                ReferencedContainer = "container:TimeBoxed.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "801B20AF2CB363A20073E9E2"
-               BuildableName = "TimeBoxedUITests.xctest"
-               BlueprintName = "TimeBoxedUITests"
+               BuildableName = "TymeBoxedUITests.xctest"
+               BlueprintName = "TymeBoxedUITests"
                ReferencedContainer = "container:TimeBoxed.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -69,13 +69,13 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "801B20942CB363A10073E9E2"
-            BuildableName = "TimeBoxed.app"
-            BlueprintName = "TimeBoxed"
+            BuildableName = "TymeBoxed.app"
+            BlueprintName = "TymeBoxed"
             ReferencedContainer = "container:TimeBoxed.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
-         identifier = "../../TimeBoxed/Tip for developer.storekit">
+         identifier = "../../TymeBoxed/Tip for developer.storekit">
       </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
@@ -89,8 +89,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "801B20942CB363A10073E9E2"
-            BuildableName = "TimeBoxed.app"
-            BlueprintName = "TimeBoxed"
+            BuildableName = "TymeBoxed.app"
+            BlueprintName = "TymeBoxed"
             ReferencedContainer = "container:TimeBoxed.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

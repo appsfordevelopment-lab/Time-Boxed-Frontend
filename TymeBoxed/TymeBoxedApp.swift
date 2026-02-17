@@ -1,5 +1,5 @@
 //
-//  TimeBoxedApp.swift
+//  TymeBoxedApp.swift
 //  Tyme Boxed
 //
 //  Created by Ali Waseem on 2024-10-06.
@@ -26,7 +26,7 @@ enum SharedModelContainer {
 }
 
 @main
-struct TimeBoxedApp: App {
+struct TymeBoxedApp: App {
   @StateObject private var requestAuthorizer = RequestAuthorizer()
   @StateObject private var donationManager = TipManager()
   @StateObject private var navigationManager = NavigationManager()

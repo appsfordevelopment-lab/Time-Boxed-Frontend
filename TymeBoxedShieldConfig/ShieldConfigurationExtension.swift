@@ -1,6 +1,6 @@
 //
 //  ShieldConfigurationExtension.swift
-//  TimeBoxedShieldConfig
+//  Tyme Boxed
 //
 //  Created by Ali Waseem on 2025-08-11.
 //

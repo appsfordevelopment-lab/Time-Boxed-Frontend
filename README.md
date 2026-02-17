@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./TimeBoxed/Assets.xcassets/AppIcon.appiconset/AppIcon-3.png" width="250" style="border-radius: 40px;">
+  <img src="./TymeBoxed/Assets.xcassets/AppIcon.appiconset/AppIcon-3.png" width="250" style="border-radius: 40px;">
 </p>
 
 <p align="center">
@@ -74,15 +74,16 @@ open TimeBoxed.xcodeproj
 
 ```
 timeboxed/
-├── TimeBoxed/                     # Main app target
+├── TymeBoxed/                     # Main app target
 │   ├── Views/                 # SwiftUI views
 │   ├── Models/                # Data models
 │   │   └── Strategies/        # Blocking strategies
 │   ├── Components/            # Reusable UI components
 │   ├── Utils/                 # Utility functions
 │   └── Intents/               # App Intents & Shortcuts
-├── TimeBoxedWidget/               # Widget extension
-└── TimeBoxedDeviceMonitor/        # Device monitoring extension
+├── TymeBoxedWidget/               # Widget extension
+├── TymeBoxedDeviceMonitor/        # Device monitoring extension
+└── TymeBoxedShieldConfig/         # Shield configuration extension
 ```
 
 ### Key Technologies Used
@@ -99,7 +100,7 @@ timeboxed/
 
 ## 🔒 Blocking Strategies
 
-All strategies live in `TimeBoxed/Models/Strategies/` and are orchestrated by `TimeBoxed/Utils/StrategyManager.swift`.
+All strategies live in `TymeBoxed/Models/Strategies/` and are orchestrated by `TymeBoxed/Utils/StrategyManager.swift`.
 
 - **NFC Tags (`NFCBlockingStrategy`)**
 

@@ -10,17 +10,17 @@ This file provides guidelines for agentic coding assistants working on the Tyme 
 open TimeBoxed.xcodeproj
 
 # Build from command line
-xcodebuild -project TimeBoxed.xcodeproj -scheme TimeBoxed -configuration Debug build
+xcodebuild -project TimeBoxed.xcodeproj -scheme TymeBoxed -configuration Debug build
 ```
 
 ### Running Tests
 This project currently does not have unit tests. When adding tests, use:
 ```bash
 # Run all tests
-xcodebuild test -project TimeBoxed.xcodeproj -scheme TimeBoxed -destination 'platform=iOS Simulator,name=iPhone 15'
+xcodebuild test -project TimeBoxed.xcodeproj -scheme TymeBoxed -destination 'platform=iOS Simulator,name=iPhone 15'
 
 # Run a single test class
-xcodebuild test -project TimeBoxed.xcodeproj -scheme TimeBoxed -destination 'platform=iOS Simulator,name=iPhone 15' -only-testing:TimeBoxedTests/ClassName
+xcodebuild test -project TimeBoxed.xcodeproj -scheme TymeBoxed -destination 'platform=iOS Simulator,name=iPhone 15' -only-testing:TymeBoxedTests/ClassName
 ```
 
 ### Code Formatting
@@ -30,7 +30,7 @@ The project uses swift-format to maintain consistent code style. Run format comm
 swift-format .
 
 # Format specific files or directories
-swift-format TimeBoxed/Views/
+swift-format TymeBoxed/Views/
 
 # Check formatting without making changes
 swift-format --dry-run .
