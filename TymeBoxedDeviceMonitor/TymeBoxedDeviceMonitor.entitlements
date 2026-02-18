@@ -6,7 +6,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.dev.ambitionsoftware.timeboxed</string>
+		<string>group.dev.ambitionsoftware.tymeboxed</string>
 	</array>
 </dict>
 </plist>

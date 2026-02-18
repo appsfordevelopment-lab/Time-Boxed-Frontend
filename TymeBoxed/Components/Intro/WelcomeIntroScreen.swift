@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct WelcomeIntroScreen: View {
+  @Environment(\.openURL) private var openURL
   @State private var showContent: Bool = false
   let onContinueWithEmail: () -> Void
   let onSkipBrick: () -> Void
@@ -79,7 +80,10 @@ struct WelcomeIntroScreen: View {
           .offset(y: showContent ? 0 : 20)
 
           // I don't have a Tyme Boxed button
-          Button(action: onSkipBrick) {
+          Button {
+            openURL(URL(string: "https://www.tymeboxed.app/preorder")!)
+            
+          } label: {
             Text("I don't have a Tyme Boxed")
               .font(.system(size: 20, weight: .semibold))
               .foregroundColor(.white)
@@ -107,7 +111,7 @@ struct WelcomeIntroScreen: View {
               .font(.system(size: 12))
               .foregroundColor(Color.white.opacity(0.9))
 
-            Link("Terms", destination: URL(string: "https://timeboxed.app/terms")!)
+            Link("Terms", destination: URL(string: "https://www.tymeboxed.app/terms")!)
               .font(.system(size: 12, weight: .medium))
               .foregroundColor(Color(red: 1, green: 0.85, blue: 0.6))
               .underline()
@@ -116,7 +120,7 @@ struct WelcomeIntroScreen: View {
               .font(.system(size: 12))
               .foregroundColor(Color.white.opacity(0.7))
 
-            Link("Privacy Policy", destination: URL(string: "https://timeboxed.app/privacy")!)
+            Link("Privacy Policy", destination: URL(string: "https://www.tymeboxed.app/privacy")!)
               .font(.system(size: 12, weight: .medium))
               .foregroundColor(Color(red: 1, green: 0.85, blue: 0.6))
               .underline()
