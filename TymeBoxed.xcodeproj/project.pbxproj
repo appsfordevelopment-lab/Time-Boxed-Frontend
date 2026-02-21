@@ -612,8 +612,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TymeBoxedDeviceMonitor/TymeBoxedDeviceMonitor.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.78.0;
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TymeBoxedDeviceMonitor/Info.plist;
@@ -628,6 +629,7 @@
 				MARKETING_VERSION = 1.78.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymeboxed.app.deviceactivity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -645,8 +647,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TymeBoxedDeviceMonitor/TymeBoxedDeviceMonitor.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.78.0;
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TymeBoxedDeviceMonitor/Info.plist;
@@ -661,6 +664,7 @@
 				MARKETING_VERSION = 1.78.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymeboxed.app.deviceactivity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -798,7 +802,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = TymeBoxed/TymeBoxed.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.78.0;
 				DEAD_CODE_STRIPPING = YES;
@@ -830,6 +834,7 @@
 				MARKETING_VERSION = 1.78.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymeboxed.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -847,7 +852,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = TymeBoxed/TymeBoxed.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.78.0;
 				DEAD_CODE_STRIPPING = YES;
@@ -879,6 +884,7 @@
 				MARKETING_VERSION = 1.78.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymeboxed.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -989,8 +995,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TymeBoxedShieldConfig/TymeBoxedShieldConfig.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.78.0;
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TymeBoxedShieldConfig/Info.plist;
@@ -1005,6 +1012,7 @@
 				MARKETING_VERSION = 1.78.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymeboxed.app.shield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1017,8 +1025,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TymeBoxedShieldConfig/TymeBoxedShieldConfig.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.78.0;
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TymeBoxedShieldConfig/Info.plist;
@@ -1033,6 +1042,7 @@
 				MARKETING_VERSION = 1.78.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymeboxed.app.shield;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1049,7 +1059,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = TymeBoxedWidget/TymeBoxedWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.78.0;
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TymeBoxedWidget/Info.plist;
@@ -1079,7 +1089,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = TymeBoxedWidget/TymeBoxedWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.78.0;
 				DEVELOPMENT_TEAM = WDAD65SU4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TymeBoxedWidget/Info.plist;

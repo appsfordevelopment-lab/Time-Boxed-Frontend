@@ -413,7 +413,7 @@ class BlockedProfiles {
     }
 
     let newDomains = domains + [domain]
-    try updateProfile(profile, in: context, domains: newDomains)
+    _ = try updateProfile(profile, in: context, domains: newDomains)
   }
 
   static func removeDomain(from profile: BlockedProfiles, context: ModelContext, domain: String)

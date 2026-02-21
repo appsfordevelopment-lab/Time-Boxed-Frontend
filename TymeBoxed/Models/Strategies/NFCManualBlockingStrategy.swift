@@ -50,28 +50,26 @@ class NFCManualBlockingStrategy: BlockingStrategy {
     nfcScanner.onTagScanned = { tag in
       let tagId = tag.url ?? tag.id
 
-      Task {
+      Task { @MainActor in
         let valid = await AuthenticationManager.shared.isNFCTagValidForUnlock(tagId: tagId)
-        await MainActor.run {
-          guard valid else {
-            self.onErrorMessage?(
-              "Unregistered device detected. Please switch to a Tyme Box Device."
-            )
-            return
-          }
-          if let physicalUnblockNFCTagId = session.blockedProfile.physicalUnblockNFCTagId,
-            physicalUnblockNFCTagId != tagId
-          {
-            self.onErrorMessage?(
-              "This NFC tag is not allowed to unblock this profile. Physical unblock setting is on for this profile"
-            )
-            return
-          }
-          session.endSession()
-          try? context.save()
-          self.appBlocker.deactivateRestrictions()
-          self.onSessionCreation?(.ended(session.blockedProfile))
+        guard valid else {
+          self.onErrorMessage?(
+            "Unregistered device detected. Please switch to a Tyme Box Device."
+          )
+          return
         }
+        if let physicalUnblockNFCTagId = session.blockedProfile.physicalUnblockNFCTagId,
+          physicalUnblockNFCTagId != tagId
+        {
+          self.onErrorMessage?(
+            "This NFC tag is not allowed to unblock this profile. Physical unblock setting is on for this profile"
+          )
+          return
+        }
+        session.endSession()
+        try? context.save()
+        self.appBlocker.deactivateRestrictions()
+        self.onSessionCreation?(.ended(session.blockedProfile))
       }
     }
 

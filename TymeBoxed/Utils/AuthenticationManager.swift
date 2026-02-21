@@ -112,14 +112,11 @@ class AuthenticationManager: ObservableObject {
       
       return response.success
     } catch {
-      var isValid = false
-      
-      await MainActor.run {
+      return await MainActor.run {
         self.isLoading = false
-        
+
         #if DEBUG
-        isValid = otp == self.otpCode
-        if isValid {
+        if otp == self.otpCode {
           self.isAuthenticated = true
           self.userDefaults.set(true, forKey: self.isAuthenticatedKey)
           self.userDefaults.set(self.email, forKey: self.emailKey)
@@ -128,16 +125,16 @@ class AuthenticationManager: ObservableObject {
           self.otpSent = false
           self.otpCode = ""
           print("Mock OTP verified successfully")
+          return true
         } else {
           self.errorMessage = "Invalid OTP. Please try again."
+          return false
         }
         #else
         self.errorMessage = error.localizedDescription
-        isValid = false
+        return false
         #endif
       }
-      
-      return isValid
     }
   }
 
